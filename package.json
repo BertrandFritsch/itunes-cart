@@ -1,0 +1,9 @@
+{
+  "name": "itunes-cart",
+  "version": "0.0.1",
+  "description": "ITunes Cart App",
+  "main": "src/index.js",
+  "repository": "https://github.com/BertrandFritsch/itunes-cart",
+  "author": "bertrand.fritsch.in@gmail.com",
+  "license": "MIT"
+}
