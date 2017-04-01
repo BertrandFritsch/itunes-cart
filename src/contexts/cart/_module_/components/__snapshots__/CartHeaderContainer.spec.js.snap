@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartHeaderContainer should render correctly 1`] = `
+<div
+  className="cart-item"
+>
+  <span
+    className="cart-header-item-count"
+  >
+    5 items - 
+  </span>
+  <span
+    className="cart-header-total-price"
+  >
+    NaN $
+  </span>
+  <button
+    className="cart-header-checkout"
+    onClick={[Function]}
+  >
+    Checkout
+  </button>
+</div>
+`;

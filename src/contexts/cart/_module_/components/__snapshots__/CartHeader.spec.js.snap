@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartHeader should render correctly 1`] = `
+<div
+  className="cart-header"
+>
+  <span
+    className="cart-header-empty-place-holder"
+  >
+    The cart is empty
+  </span>
+</div>
+`;
+
+exports[`CartHeader should render correctly also with a non-empty cart 1`] = `
+<div
+  className="cart-item"
+>
+  <span
+    className="cart-header-item-count"
+  >
+    2 items - 
+  </span>
+  <span
+    className="cart-header-total-price"
+  >
+    1.98 $
+  </span>
+  <button
+    className="cart-header-checkout"
+    onClick={[Function]}
+  >
+    Checkout
+  </button>
+</div>
+`;

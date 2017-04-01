@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchField should render correctly 1`] = `
+<SearchField
+  onSubmitSearchText={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Search a track..."
+    type="text"
+  />
+</SearchField>
+`;

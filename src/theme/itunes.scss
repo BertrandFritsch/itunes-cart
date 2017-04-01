@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.main-container {
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 5px 10px;
+
+  background-color: rgba(0,0,0,0.8);
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 14px;
+
+  .itunes-cart-logo {
+    flex: 1;
+
+    font-size: 24px;
+  }
+
+  .cart-header-item-count {
+    font-size: 20px;
+  }
+
+  .cart-header-total-price {
+    font-size: 24px;
+  }
+
+  .cart-header-checkout {
+    margin-left: 20px;
+    font-size: 1.2em;
+  }
+}
+
+@import '~react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+
+.search-section {
+  height: calc(100% - 110px);
+  margin: 50px 50px 0 50px;
+
+  > .search-table {
+    height: 100%;
+
+    > .field-container {
+      height: 70px;
+
+      input {
+        height: 60px;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+        font-size: 18px;
+      }
+    }
+
+    > .table-container {
+      height: calc(100% - 70px);
+
+      > .react-bs-table-container {
+        height: 100%;
+
+        .react-bs-table {
+          margin: 0;
+          border: none;
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+
+          .react-bs-container-header {
+            background-color: #ebebeb;
+
+            th {
+              border-right: 1px solid #cccccc;
+              height: 40px;
+            }
+          }
+
+          .react-bs-container-body {
+            height: calc(100% - 40px) !important;  // overwrite inline height
+            color: #888;
+
+            tr {
+              border-bottom: 1px solid #cccccc;
+            }
+
+            td {
+              height: 80px;
+              vertical-align: middle;
+              padding-left: 10px;
+            }
+
+            .artworkUrl60-cell {
+              padding: 5px;
+            }
+
+            .checkbox-cell {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
