@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const productionEnv = process.env.NODE_ENV === 'production';
 const developmentEnv = !productionEnv;
+const publicPath = process.env.PUBLIC_PATH || '/';
 
 let plugins = [
   new HtmlWebpackPlugin({
@@ -52,7 +53,7 @@ let config = {
   output: {
     path: path.join(__dirname, '/dist/'),
     filename: 'bundle-[hash].js',
-    publicPath: '/'
+    publicPath
   },
   module: {
     rules: [
