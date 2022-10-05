@@ -12,7 +12,9 @@
     "lint": "eslint ./src",
     "flow": "flow check",
     "test:unit:watch": "cross-env NODE_ENV=test jest --watch",
-    "test:unit": "cross-env NODE_ENV=test jest --coverage"
+    "test:unit": "cross-env NODE_ENV=test jest --coverage",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
@@ -47,13 +49,14 @@
     "babel-polyfill": "^6.23.0",
     "fetch-jsonp": "^1.0.6",
     "immutable": "^3.8.1",
-    "react": "^15.4.2",
+    "react": "^16.5.0",
     "react-bootstrap-table": "^3.1.2",
-    "react-dom": "^15.4.2",
+    "react-dom": "^16.5.0",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-saga": "^0.14.4",
-    "reselect": "^3.0.0"
+    "reselect": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "jest": {
     "moduleNameMapper": {
@@ -69,5 +72,6 @@
     "roots": [
       "<rootDir>/src"
     ]
-  }
+  },
+  "snyk": true
 }
